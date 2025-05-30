@@ -6,7 +6,6 @@ SESAMI/bet.py
 SESAMI/lasso_model.sav
 SESAMI/mplstyle.txt
 SESAMI/predict.py
-SESAMI/run.py
 SESAMI.egg-info/PKG-INFO
 SESAMI.egg-info/SOURCES.txt
 SESAMI.egg-info/dependency_links.txt

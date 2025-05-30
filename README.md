@@ -14,7 +14,7 @@
 ```python      
 from SESAMI.bet import fitbet
 
-BET_dict, BET_ESW_dict = calculation_bet(csv_file="example.csv", columns=["Pressure","Loading"],
+BET_dict, BET_ESW_dict = fitbet(csv_file="example.csv", columns=["Pressure","Loading"],
                                             adsorbate="N2", p0=1e5, T=77,
                                             R2_cutoff=0.9995, R2_min=0.998,
                                             font_size=12, font_type="DejaVu Sans",
@@ -53,8 +53,8 @@ print(MLBET)
 
 # Reference
 SESAMI-APP: [SESAMI APP: An Accessible Interface for Surface Area Calculation of Materials from Adsorption Isotherms](https://joss.theoj.org/papers/10.21105/joss.05429)               
-Algorithms: [Surface Area Determination of Porous Materials Using the Brunauer-Emmett-Teller (BET) Method: Limitations and Improvements](https://doi.org/10.1021/acs.jpcc.9b02116)               
-Machine Learning Model: [Beyond the BET Analysis: The Surface Area Prediction of Nanoporous Materials Using a Machine Learning Method](https://doi.org/10.1021/acs.jpclett.0c01518)            
+SESAMI 1.0: [Surface Area Determination of Porous Materials Using the Brunauer-Emmett-Teller (BET) Method: Limitations and Improvements](https://doi.org/10.1021/acs.jpcc.9b02116)               
+SESAMI 2.0 (Machine Learning Model): [Beyond the BET Analysis: The Surface Area Prediction of Nanoporous Materials Using a Machine Learning Method](https://doi.org/10.1021/acs.jpclett.0c01518)            
 
 
 # Bugs

@@ -1,16 +1,20 @@
 Metadata-Version: 2.1
 Name: SESAMI
-Version: 2.7
+Version: 2.8
 Summary: Characterization Tools for Porous Materials Using Nitrogen/Argon Adsorption
 Home-page: https://github.com/hjkgrp/SESAMI_web/
 Author: Guobin Zhao
 Author-email: sxmzhaogb@gmai.com
 License: MIT
-Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
 
 <h1 align="center">SESAMI</h1>
 
@@ -28,7 +32,7 @@ License-File: LICENSE
 ```python      
 from SESAMI.bet import fitbet
 
-BET_dict, BET_ESW_dict = calculation_bet(csv_file="example.csv", columns=["Pressure","Loading"],
+BET_dict, BET_ESW_dict = fitbet(csv_file="example.csv", columns=["Pressure","Loading"],
                                             adsorbate="N2", p0=1e5, T=77,
                                             R2_cutoff=0.9995, R2_min=0.998,
                                             font_size=12, font_type="DejaVu Sans",
@@ -67,8 +71,8 @@ print(MLBET)
 
 # Reference
 SESAMI-APP: [SESAMI APP: An Accessible Interface for Surface Area Calculation of Materials from Adsorption Isotherms](https://joss.theoj.org/papers/10.21105/joss.05429)               
-Algorithms: [Surface Area Determination of Porous Materials Using the Brunauer-Emmett-Teller (BET) Method: Limitations and Improvements](https://doi.org/10.1021/acs.jpcc.9b02116)               
-Machine Learning Model: [Beyond the BET Analysis: The Surface Area Prediction of Nanoporous Materials Using a Machine Learning Method](https://doi.org/10.1021/acs.jpclett.0c01518)            
+SESAMI 1.0: [Surface Area Determination of Porous Materials Using the Brunauer-Emmett-Teller (BET) Method: Limitations and Improvements](https://doi.org/10.1021/acs.jpcc.9b02116)               
+SESAMI 2.0 (Machine Learning Model): [Beyond the BET Analysis: The Surface Area Prediction of Nanoporous Materials Using a Machine Learning Method](https://doi.org/10.1021/acs.jpclett.0c01518)            
 
 
 # Bugs
@@ -77,5 +81,3 @@ If you encounter any problem during using ***SESAMI-PyPi***, please email ```sxm
              
                                                           
 **Group:**   [Molecular Thermodynamics & Advance Processes Laboratory](https://sites.google.com/view/mtap-lab)                                
-
-

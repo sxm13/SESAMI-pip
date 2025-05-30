@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="SESAMI",
-    version="2.7",
+    version="2.8",
     packages=find_packages(),
     description="Characterization Tools for Porous Materials Using Nitrogen/Argon Adsorption",
     author="Guobin Zhao",
@@ -23,10 +23,7 @@ setup(
     install_requires=[
         "scipy",
         "matplotlib",
-        "statsmodels",
         "pandas",
-        "flask",
-        "pymongo[srv]==4.1.1",
         "numpy",
         "scikit-learn"
     ],
